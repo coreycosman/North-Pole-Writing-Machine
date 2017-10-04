@@ -11,6 +11,10 @@ kids_data.each_line do |kid|
   gender   = kid_data_array[1]
   behavior = kid_data_array[2]
   toys     = kid_data_array[3..8]
+  address    = kid_data_array[9..12]
+  lasttoy    = kid_data_array[14]
+  infraction = kid_data_array[16..kid_data_array.length]
+
 
   next unless behavior == 'nice'
 
